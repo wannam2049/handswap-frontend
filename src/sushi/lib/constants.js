@@ -22,7 +22,7 @@ export const INTEGERS = {
   INTEREST_RATE_BASE: new BigNumber('1e18'),
 }
 
-const NETWORK_ID = 1;
+const NETWORK_ID = 4;
 
 export const addressMap = {
   uniswapFactory: '0xc0a47dFe034B400B47bDaD5FecDa2621de6c4d95',
@@ -42,13 +42,14 @@ export const addressMap = {
 
 export const contractAddresses = {
   sushi: {
-    [NETWORK_ID]: '0x6b3595068778dd592e39a122f4f5a5cf09c90fe2',
+    [NETWORK_ID]: '0x1037403c0cae8f4eac645beb57cb48c03a2178f9',
   },
   masterChef: {
-    [NETWORK_ID]: '0xc2edad668740f1aa35e4d8f227fb8e17dca888cd',
+    [NETWORK_ID]: '0xB2e998F3ab8BBc34f87451f259a4178e59CCF17A',
   },
   weth: {
-    [NETWORK_ID]: addressMap.weth,
+    [NETWORK_ID]: '0xc778417e063141139fce010982780140aa0cd5ab',
+    // [NETWORK_ID]: addressMap.weth,
   },
 }
 
