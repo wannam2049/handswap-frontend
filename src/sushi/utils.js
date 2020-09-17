@@ -98,6 +98,7 @@ export const getTotalLPWethValue = async (
   // Return p1 * w1 * 2
   const portionLp = new BigNumber(balance).div(new BigNumber(totalSupply))
   const lpWethWorth = new BigNumber(lpContractWeth)
+  // LP token total value in WETH
   const totalLpWethValue = portionLp.times(lpWethWorth).times(new BigNumber(2))
   // Calculate
   const tokenAmount = new BigNumber(tokenAmountWholeLP)
